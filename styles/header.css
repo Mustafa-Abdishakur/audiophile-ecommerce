@@ -7,9 +7,49 @@
     box-sizing: border-box;
 }
 body {
-    
+    font-family: 'Manrope';
 }
 header {
     background-color: var(--black);
     color:#fff;
+}
+.header-container {
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+header h2 {
+    font-weight:bold;
+}
+.header-container nav ul{
+    display:flex;
+    list-style: none;
+}
+.header-container nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    margin-right:60px;
+}
+.new-product {
+    width:80%;
+    margin:auto;
+}
+.new-product-container {
+    background-color: var(--black);
+    color:#fff;
+    display:flex;
+    
+}
+.new-product-img {
+    /* width:50%; */
+}
+.new-product-img img {
+    display:inline-block;
+    width:100%;
+}
+.new-product-details {
+    padding-top:60px;    
 }
