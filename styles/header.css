@@ -1,5 +1,8 @@
 :root {
     --orange: #D87D4A;
+    --grey: #F0F0F0;
+    --black: rgba(16, 16, 16, 1);
+    --dark-grey: rgb(134, 134, 134);
 }
 
 * {
@@ -9,7 +12,7 @@
 }
 
 body {
-    font-family: 'Manrope';
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -17,7 +20,7 @@ header {
     background-image: url('../assets/home/desktop/image-hero.jpg');
     background-size: cover;
     background-position: 100px;
-    height: 95vh;
+    height: 90vh;
 }
 
 .header-container {
@@ -41,4 +44,84 @@ header h2 {
     text-decoration: none;
     color: #fff;
     margin-right: 60px;
+}
+
+main {
+    width: 70vw;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--black);
+    color: #fff;
+    padding: 70px;
+}
+
+.footer-container {
+    width: 70vw;
+    margin: auto;
+
+}
+.main-footer {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.footer-1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 p{
+    margin-top: 20px;
+    line-height: 1.5rem;
+    color: var(--dark-grey);
+    font-size: 15px;
+}
+
+.copyright {
+    color: var(--dark-grey);
+    font-weight: bolder;
+    font-size: 15px;
+}
+.footer-2 {
+    padding-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.pages-links {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: flex-end;
+
+}
+.pages-links li {
+    margin-right: 50px;
+    font-size:13px;
+
+}
+.pages-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+.socials {
+    margin-right: 30px;
+
+}
+.socials ul {
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.socials ul li{
+    margin-right:20px;
 }

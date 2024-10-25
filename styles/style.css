@@ -1,5 +1,7 @@
 :root {
     --orange: #D87D4A;
+    --grey: #F0F0F0;
+    --white: rgba(255, 255, 255, 1);
 }
 .new-product {
     width: 80%;
@@ -7,7 +9,6 @@
 }
 
 .new-product-container {
-    background-color: var(--black);
     color: #fff;
     display: flex;
     padding-top: 60px;
@@ -47,17 +48,14 @@
     width:150px;
     margin-top:30px;
 }   
-main {
-    width:80%;
-    margin:auto;
-}
+
 
 .products-list {
     display:flex;
     justify-content: space-between;
-    width:80%;
-    margin:auto;
-    margin-top:40px;
+    margin-top:100px;
+    margin-bottom:100px;
+
 }
 .product {
     display:flex;
@@ -66,8 +64,10 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
-    background-color: rgb(236, 236, 236);
+    background-color:var(--grey);
     padding:5px;
+    border-radius: 10px;
+    width:30%;
 }
 .product-img {
     width:200px;
@@ -83,36 +83,171 @@ main {
 .product a img {
     padding-left:5px;
     align-self: center;
-    width:12px;
+    width:10px;
 }
 .zx9 {
     background-color: var(--orange);
     display:flex;
-    position: relative;
+    justify-content: space-between;
     padding:20px;    
-    background-image: url('../assets/product-zx9-speaker/desktop/image-product.jpg');
     width:100%;
-    height:80vh;
-    background-size: cover;
+    height:60vh;
+    padding-bottom:0;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.zx9::after {
-    content: '';
-    background-color: var(--orange);
-    width:100%;
-    height: 100%;
-    z-index: -1;
-}
+
 .zx9-img {
-    width:80%;
-    height:70vh;
+    width:50%;
+    height:100%;
+    display:flex;
+    position: relative;
+
 }
-.zx9-img img {
-    max-width:100%;
-    max-height:100%;
-}
-.zx9-details {
+.zx9-img img:first-child{
     position: absolute;
+    width:900px;
+    top:-60px;
+    left:-45px;
+
+}
+.zx9-img img:last-child{
+    position: absolute;
+    width:350px;
+    bottom:-2%;
+    left:40%;
+
 }
 
+.zx9-details {
+    width:30%;
+    margin:auto;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.zx9-details h2{
+    font-size:56px;
+    text-transform: uppercase;
 
+}
+.zx9-details p {
+    color:var(--white);
+    font-weight: lighter;
+    margin-top:20px;
+    margin-bottom:20px;
 
+}
+.zx9-details button {
+    background-color: var(--black);
+    text-transform: uppercase;
+    color:#fff;
+    border:1px solid transparent;
+    width:fit-content;
+    padding: 15px 20px;
+    z-index: 2;
+}
+.zx7 {
+    display:flex;
+    position:relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:100%;
+    border-radius: 10px;
+}
+.zx7-details{
+    position:absolute;
+    align-self: center;
+    left:100px;
+    
+}
+.zx7-details h2{
+    font-size:26px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom:20px;
+
+}
+.zx7-details button{
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid black;
+    font-weight: bolder;
+    width: fit-content;
+
+}
+
+.zx7-img {
+    width:100%;
+    border-radius: 10px;
+
+}
+.zx7-img img {
+    width:100%;
+    border-radius: 10px;
+}
+.yx1 {
+    display:flex;
+    justify-content: space-between;
+}
+.yx1 div {
+    width:50%;
+    border-radius: 10px;
+}
+
+.yx1-img img {
+    border-radius: 10px;
+}
+.yx1-details {
+    background-color:var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:100px;
+}
+.yx1-details h2 {
+    font-size:26px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom:20px;
+
+}
+.yx1-details button {
+    width: fit-content;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+.audio-gear {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:150px;
+    margin-bottom:150px;
+    
+}
+.gear-details h2 {
+    font-size:50px;
+    text-transform: uppercase;
+    width:80%;
+    margin-bottom:20px;
+
+}
+.gear-details h2 b{
+    color:var(--orange);
+}
+.gear-details p {
+    width:80%;
+    font-size: 15px;
+}
+.gear-img {
+    border-radius:10px;
+}
+
+.gear-img img{
+    border-radius:10px;
+}
