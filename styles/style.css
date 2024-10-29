@@ -1,24 +1,19 @@
-:root {
-    --orange: #D87D4A;
-    --grey: #F0F0F0;
-    --white: rgba(255, 255, 255, 1);
-}
+
 .new-product {
     width: 80%;
+    height:85vh;
     margin: auto;
 }
 
 .new-product-container {
     color: #fff;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 100px;
-
+    padding-top: 100px;
 }
 
 .new-product-details {
     padding-right: 20px;
-    width: 50%;
+    width:40%;
     display:flex;
     flex-direction: column;
 }
@@ -37,7 +32,7 @@
 }
 
 .product-description {
-    color: grey;
+    color: lightgrey;
 }
 .new-product-details button {
     background-color: var(--orange);
@@ -148,6 +143,9 @@
     padding: 15px 20px;
     z-index: 2;
 }
+.zx9-details button:hover {
+    background-color: var(--light-black);
+}
 .zx7 {
     display:flex;
     position:relative;
@@ -173,12 +171,15 @@
     text-transform: uppercase;
     background-color: transparent;
     padding: 15px 25px;
-    border: 1px solid black;
-    font-weight: bolder;
+    border: 2px solid black;
+    font-weight: bold;
     width: fit-content;
 
 }
-
+.zx7-details button:hover {
+    color: #fff;
+    background-color: black;
+}
 .zx7-img {
     width:100%;
     border-radius: 10px;
@@ -190,15 +191,17 @@
 }
 .yx1 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .yx1 div {
-    width:50%;
+    width:45%;
     border-radius: 10px;
 }
 
 .yx1-img img {
     border-radius: 10px;
+    width:100%;
+    height:auto;
 }
 .yx1-details {
     background-color:var(--grey);
@@ -219,8 +222,12 @@
     text-transform: uppercase;
     background-color: transparent;
     padding: 15px 25px;
-    border: 1px solid black;
-    font-weight: bolder;
+    border: 2px solid black;
+    font-weight: bold;
+}
+.yx1-details button:hover {
+    color: #fff;
+    background-color: black;
 }
 .audio-gear {
     display:flex;
@@ -228,6 +235,7 @@
     justify-content: space-between;
     margin-top:150px;
     margin-bottom:150px;
+    width:100%;
     
 }
 .gear-details h2 {
@@ -250,4 +258,37 @@
 
 .gear-img img{
     border-radius:10px;
+}
+@media (max-width: 1230px) {
+    .new-product {
+        width: 90%;
+
+    }
+    .new-product-details {
+        /* width:40%; */
+    }
+}
+@media (max-width: 1024px) {
+    .new-product-details h2 {
+        font-size: 40px;
+    }
+    .zx9-img img:first-child{
+        left:-200px;
+    
+    }
+    .zx9-img img:last-child{
+        left:10%;
+    
+    }
+    .gear-details h2 {
+        width:100%;
+        font-size:40px;
+    }
+    .gear-details p {
+        width:90%;
+        font-size: 15px;
+    }
+    .gear-img img{
+        width:400px;
+    }
 }
