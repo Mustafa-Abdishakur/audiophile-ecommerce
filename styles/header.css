@@ -80,26 +80,23 @@ footer {
 .footer-container {
     width: 70%;
     margin: auto;
-
-}
-
-.main-footer {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: space-between;
 }
 
 .footer-1 {
-    width: 45%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-1 p {
-    margin-top: 20px;
+.footer-2 {
+    display: flex;
+}
+
+.footer-2 p {
     line-height: 1.5rem;
     color: var(--dark-grey);
     font-size: 15px;
+    width: 50%;
 }
 
 .copyright {
@@ -113,7 +110,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .pages-links {
@@ -133,6 +129,7 @@ footer {
 .pages-links li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .pages-links li a:hover {
@@ -141,7 +138,6 @@ footer {
 
 .socials {
     margin-right: 30px;
-
 }
 
 .socials ul {
@@ -210,9 +206,13 @@ footer {
         background-position-y: -10px;
 
     }
-
+    footer {
+        padding: 70px;
+        padding-left:0px;
+        padding-right:0px;
+    }
     .footer-container {
-        width: 90vw;
+        width: 90%;
     }
 }
 
@@ -225,6 +225,9 @@ footer {
         background-position-x: -250px;
 
     }
+    .footer-container {
+        width: 95%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -235,15 +238,24 @@ footer {
 
     }
 
-    main {
-        /* width: 95vw; */
-    }
-
     .header-container {
         width: 95%;
         justify-items: stretch;
 
     }
+    footer {
+        padding-bottom: 0;
+    }
+    .socials {
+        margin-right: 0;
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top:70px;
+        padding-bottom:20px;
+    }
+  
 }
 
 @media (max-width: 768px) {
@@ -254,14 +266,25 @@ footer {
     header nav {
         display: none;
     }
+
     header {
-    background-image: url('../assets/home/tablet/image-header.jpg');
-    background-size: contain;
-    background-position-y: 0;
-    background-position-x: 0;
-    }
-    body{
-        /* background-color: #3e8e41; */
+        background-image: url('../assets/home/tablet/image-header.jpg');
+        background-size: contain;
+        background-position-y: 0;
+        background-position-x: 0;
     }
 
+    .footer-1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pages-links li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-2 p {
+        width: 100%;
+    }
 }
