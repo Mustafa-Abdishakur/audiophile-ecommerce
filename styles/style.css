@@ -1,20 +1,19 @@
 .new-product {
     width: 80%;
-    height: 85vh;
     margin: auto;
-}
-
-.new-product-container {
+    /* background-color: aqua;  */
     color: #fff;
-    display: flex;
-    padding-top: 100px;
 }
 
 .new-product-details {
-    padding-right: 20px;
-    width: 40%;
+    width: 50%;
+    text-align: center;
+    margin:auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top:100px;
+    /* background-color: aqua; */
 }
 
 .new-product-details p:first-child {
@@ -50,7 +49,6 @@
     justify-content: space-between;
     margin-top: 100px;
     margin-bottom: 100px;
-
 }
 
 .product {
@@ -234,11 +232,11 @@
     justify-content: space-around;
     height: 40vh;
     width: 100%;
+    /* background-color: aqua; */
 
 }
 
 .yx1 div {
-    width: 45%;
     border-radius: 10px;
 }
 
@@ -246,7 +244,8 @@
     background-image: url('../assets/home/desktop/image-earphones-yx1.jpg');
     background-size: cover;
     border-radius: 10px;
-
+    height: auto;
+    width: 45%;
 }
 
 .yx1-details {
@@ -255,6 +254,8 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+    width: 45%;
+
 }
 
 .yx1-details h2 {
@@ -309,7 +310,7 @@
 .gear-details p {
     width: 80%;
     font-size: 15px;
-    color:var(--light-black);
+    color: var(--light-black);
 }
 
 .gear-img {
@@ -328,7 +329,6 @@
 @media (max-width: 1230px) {
     .new-product {
         width: 90%;
-
     }
 
     .zx9-details {
@@ -392,8 +392,14 @@
     }
 
 }
-
+/*Tablet*/
 @media (max-width: 768px) {
+    .new-product {
+        height: auto;
+        width:100%;
+        
+    }
+
     .new-product-details {
         width: 60%;
         text-align: center;
@@ -402,14 +408,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+         margin-top:80px;
+
     }
 
     .new-product-details h2 {
         font-size: 56px;
     }
 
-    .new-product {
-        height: 80vh;
+
+    .products-list {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .zx9 {
@@ -475,9 +485,24 @@
 
     }
 
+    .yx1 {
+        justify-content: center;
+        height: 35vh;
+
+    }
+
     .yx1-img {
         background-image: url('../assets/home/tablet/image-earphones-yx1.jpg');
-        background-position-x: initial;
+        background-repeat: no-repeat;
+
+    }
+
+    .yx1-details {
+        padding-left: 20px;
+    }
+
+    .yx1-details h2 {
+        font-size: 22px;
     }
 
     .audio-gear {
@@ -495,11 +520,16 @@
         width: 100% !important;
         border-radius: 10px;
     }
+
     .gear-details {
         width: 90%;
-        margin:auto;
+        margin: auto;
         text-align: center;
-        margin-top:30px;
+        margin-top: 30px;
     }
 
+}
+/*mobile*/
+@media (max-width: 375px) {
+    
 }

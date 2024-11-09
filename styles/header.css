@@ -23,6 +23,10 @@ header {
     background-image: url('../assets/home/desktop/image-hero.jpg');
     background-size: cover;
     background-position-y: -80px;
+    background-position-x: -300px;
+    height: 85vh;
+    /* background-repeat: no-repeat; */
+
 }
 
 .header-container {
@@ -121,7 +125,7 @@ footer {
 }
 
 .pages-links li {
-    margin-right: 50px;
+    margin: 20px;
     font-size: 13px;
 
 }
@@ -193,7 +197,7 @@ footer {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: var(--light-black);
 }
 
 @media (max-width: 1440px) {
@@ -202,15 +206,17 @@ footer {
     }
 
     header {
-        background-position-x: -100px;
-        background-position-y: -10px;
 
+        background-position-x: -250px;
+        background-position-y: -50px;
     }
+
     footer {
         padding: 70px;
-        padding-left:0px;
-        padding-right:0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
+
     .footer-container {
         width: 90%;
     }
@@ -225,6 +231,7 @@ footer {
         background-position-x: -250px;
 
     }
+
     .footer-container {
         width: 95%;
     }
@@ -232,8 +239,8 @@ footer {
 
 @media (max-width: 1024px) {
     header {
-        background-position-x: -450px;
-        background-position-y: 0px;
+        background-position-x: -400px;
+        background-position-y: -20px;
         background-size: contain no-repeat;
 
     }
@@ -243,22 +250,28 @@ footer {
         justify-items: stretch;
 
     }
+
     footer {
         padding-bottom: 0;
     }
+
     .socials {
         margin-right: 0;
-        display:flex;
+        display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        margin-top:70px;
-        padding-bottom:20px;
+        margin-top: 70px;
+        padding-bottom: 20px;
     }
-  
+
 }
 
 @media (max-width: 768px) {
+    main {
+        width: 95vw;
+    }
+
     .dropdown {
         display: inline-block;
     }
@@ -269,9 +282,13 @@ footer {
 
     header {
         background-image: url('../assets/home/tablet/image-header.jpg');
-        background-size: contain;
+        background-size: cover;
+        height: auto;
         background-position-y: 0;
         background-position-x: 0;
+        background-repeat: no-repeat;
+        padding-bottom: 150px;
+
     }
 
     .footer-1 {
@@ -287,4 +304,17 @@ footer {
     .footer-2 p {
         width: 100%;
     }
+}
+
+@media (max-width: 615px) {
+    header {
+        background-position-x: -100px;
+        background-repeat: repeat;
+    }
+
+   .pages-links li {
+    margin: 10px;
+
+    }
+
 }
