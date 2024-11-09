@@ -25,7 +25,6 @@ header {
     background-position-y: -80px;
     background-position-x: -300px;
     height: 85vh;
-    /* background-repeat: no-repeat; */
 
 }
 
@@ -267,6 +266,7 @@ footer {
 
 }
 
+/*Tablet*/
 @media (max-width: 768px) {
     main {
         width: 95vw;
@@ -312,9 +312,47 @@ footer {
         background-repeat: repeat;
     }
 
-   .pages-links li {
-    margin: 10px;
+    .pages-links li {
+        margin: 10px;
 
     }
 
+}
+
+/*mobile*/
+@media (max-width: 375px) {
+    /* header {
+        background-image: url('../assets/shared/mobile/image-xx99-mark-two-headphones.jpg');
+    } */
+
+    footer {
+        padding: 40px;
+    }
+    .footer-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .pages-links {
+        justify-content: center;
+        flex-direction: column;
+        margin-top:40px;
+
+    }
+    .footer-2 {
+       align-items: center;
+       text-align: center;
+    }
+    .socials {
+        margin-right: 0;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .socials ul{
+        padding:20px;
+        align-items: center;
+    }
+    
 }
