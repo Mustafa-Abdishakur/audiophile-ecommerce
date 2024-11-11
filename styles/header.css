@@ -23,7 +23,6 @@ header {
     background-image: url('../assets/home/desktop/image-hero.jpg');
     background-size: cover;
     background-position-y: -80px;
-    background-position-x: -300px;
     height: 85vh;
 
 }
@@ -205,9 +204,7 @@ footer {
     }
 
     header {
-
-        background-position-x: -250px;
-        background-position-y: -50px;
+        background-position-y:0;
     }
 
     footer {
@@ -227,8 +224,7 @@ footer {
     }
 
     header {
-        background-position-x: -250px;
-
+        background-position-x: -100px;
     }
 
     .footer-container {
@@ -238,10 +234,9 @@ footer {
 
 @media (max-width: 1024px) {
     header {
-        background-position-x: -400px;
+        background-position-x: -300px;
         background-position-y: -20px;
         background-size: contain no-repeat;
-
     }
 
     .header-container {
@@ -321,10 +316,6 @@ footer {
 
 /*mobile*/
 @media (max-width: 375px) {
-    /* header {
-        background-image: url('../assets/shared/mobile/image-xx99-mark-two-headphones.jpg');
-    } */
-
     footer {
         padding: 40px;
     }
