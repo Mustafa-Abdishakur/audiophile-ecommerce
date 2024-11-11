@@ -204,7 +204,7 @@ footer {
     }
 
     header {
-        background-position-y:0;
+        background-position-y: 0;
     }
 
     footer {
@@ -316,9 +316,24 @@ footer {
 
 /*mobile*/
 @media (max-width: 375px) {
+    header {
+        background-image: url('../assets/home/mobile/image-header.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+
+
+
+
+
+
+
     footer {
         padding: 40px;
     }
+
     .footer-1 {
         display: flex;
         justify-content: center;
@@ -326,24 +341,28 @@ footer {
         text-align: center;
         flex-direction: column;
     }
+
     .pages-links {
         justify-content: center;
         flex-direction: column;
-        margin-top:40px;
+        margin-top: 40px;
 
     }
+
     .footer-2 {
-       align-items: center;
-       text-align: center;
+        align-items: center;
+        text-align: center;
     }
+
     .socials {
         margin-right: 0;
-        display:flex;
+        display: flex;
         flex-direction: column-reverse;
     }
-    .socials ul{
-        padding:20px;
+
+    .socials ul {
+        padding: 20px;
         align-items: center;
     }
-    
+
 }
