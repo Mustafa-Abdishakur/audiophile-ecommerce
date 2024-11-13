@@ -313,6 +313,9 @@
 .gear-tablet {
     display: none;
 }
+.gear-mobile {
+    display: none;
+}
 
 @media (max-width: 1230px) {
     .new-product {
@@ -611,5 +614,26 @@
     }
     .yx1-details h2 {
         font-weight:800;
+    }
+
+
+    .gear-tablet {
+        display:none;
+    }
+    .gear-mobile {
+        display:initial;
+        width:100% !important;
+        border-radius: 10px;
+    }
+    .gear-details {
+        /* background-color: aqua; */
+        width:100%;
+    }
+    .gear-details h2{
+        width:100%;
+        font-size: 35px;
+    }
+    .gear-details p{
+        width:100%;
     }
 }
