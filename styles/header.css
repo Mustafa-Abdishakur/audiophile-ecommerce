@@ -314,21 +314,13 @@ footer {
 
 }
 
-/*mobile*/
+/*MOBILE*/
 @media (max-width: 375px) {
     header {
         background-image: url('../assets/home/mobile/image-header.jpg');
         background-repeat: no-repeat;
         background-position: center;
     }
-
-
-
-
-
-
-
-
 
     footer {
         padding: 40px;
