@@ -33,9 +33,9 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
     padding: 30px;
     border-bottom: 1px solid var(--light-black);
+    align-items: center;
 }
 
 header h2 {
@@ -45,8 +45,7 @@ header h2 {
 }
 
 .cart {
-    justify-self: end;
-
+    justify-self: right;
 }
 
 .header-container nav ul {
@@ -284,6 +283,12 @@ footer {
         background-repeat: no-repeat;
         padding-bottom: 150px;
 
+    }
+    .header-container {
+        width:100%;
+    }
+    .website-title{
+        margin-left:-100px;
     }
 
     .footer-1 {
