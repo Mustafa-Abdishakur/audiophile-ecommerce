@@ -33,6 +33,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    align-items: center;
     padding: 30px;
     border-bottom: 1px solid var(--light-black);
     align-items: center;
@@ -326,7 +327,9 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
     }
-
+    .website-title{
+        margin-left:0;
+    }
     footer {
         padding: 40px;
     }
