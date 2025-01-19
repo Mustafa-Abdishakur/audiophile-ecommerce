@@ -1,0 +1,10 @@
+header {
+    background-image: url('');
+    background-color: var(--black);
+    height: auto;
+    margin-bottom:70px;
+}
+main {
+    width:70vw;
+    margin:auto;
+}
