@@ -50,6 +50,9 @@ main {
 .zx7-category-image {
     background-image: url('../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg');
 }
+.yx1-category-image {
+    background-image: url('../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg');
+}
 .category-1 .product-details p:first-child {
     color:var(--orange);
     letter-spacing: 0.7rem;
@@ -134,6 +137,9 @@ main {
     .zx7-category-image {
         background-image: url('../assets/product-zx7-speaker/tablet/image-category-page-preview.jpg');
     }
+    .yx1-category-image {
+        background-image: url('../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg');
+    }
 }
 /*MOBILE*/
 @media (max-width: 375px) {
@@ -156,5 +162,8 @@ main {
     }
     .zx7-category-image {
         background-image: url('../assets/product-zx7-speaker/mobile/image-category-page-preview.jpg');
+    }
+    .yx1-category-image {
+        background-image: url('../assets/product-yx1-earphones/mobile/image-category-page-preview.jpg');
     }
 }
